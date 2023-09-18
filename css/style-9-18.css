@@ -1,0 +1,319 @@
+@font-face {
+  font-family: business;
+  src: url(business.ttf);
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Times New Roman", Times, serif;;
+  background-color: #e3dac9;
+}
+.thefont {
+  font-family: business;
+}
+#title {
+  font-size: 60px;
+}
+#man {
+  height: 220px;
+  display: inline-block;
+  margin-left: 40px;
+  vertical-align: middle;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.tkr-grn {
+  color: lawngreen;
+}
+.tkr-red {
+  color: red;
+}
+#tm {
+  font-size: 30px;
+  vertical-align: text-top;
+}
+#email {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  margin-top: 30px;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: black;
+  text-align: center;
+}
+li {
+  display: inline;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+li a:hover {
+  background-color: #333;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: white;
+}
+.email-hov:hover {
+  background-color: black;
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -20vh;
+  visibility: hidden;
+}
+.email-pad {
+  padding-bottom: 10px;
+  padding-left: 60px;
+}
+#container-adds-1 {
+  text-align: center;
+  height: 100vh;
+}
+#container-adds-2 {
+  text-align: left;
+  height: 100vh;
+}
+#container-adds-3 {
+  text-align: center;
+  height: 70vh;
+}
+@media screen and (max-width: 768px) {
+  #container-adds-1 {
+    height: 100vh;
+  }
+  #container-adds-2 {
+    height: 80vh;
+    font-size: 12px;
+  }
+  #container-adds-3 {
+    height: 70vh;
+    font-size: 12px;
+  }
+  #container-adds-2 h1 {
+    font-size: 40px;
+  }
+  #container-adds-3 h1 {
+    font-size: 40px;
+  }
+  .email-pad {
+    padding-bottom: 0px;
+    padding-left: 8px;
+  }
+  a.anchor {
+      top: -15vh;
+  }
+}
+/* yoinked https://stackoverflow.com/questions/51505446/css-scrolling-text-loop */
+#outer {
+  overflow: hidden;
+}
+#outer div {
+  display: inline-block;
+}
+#loop {
+  white-space: nowrap;
+  animation: loop-anim 12s linear infinite;
+}
+@keyframes loop-anim {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -50%;
+  }
+}      @font-face {
+  font-family: business;
+  src: url(business.ttf);
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Times New Roman", Times, serif;;
+  background-color: #e3dac9;
+}
+.thefont {
+  font-family: business;
+}
+#title {
+  font-size: 60px;
+}
+#man {
+  height: 220px;
+  display: inline-block;
+  margin-left: 40px;
+  vertical-align: middle;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.tkr-grn {
+  color: lawngreen;
+}
+.tkr-red {
+  color: red;
+}
+#tm {
+  font-size: 30px;
+  vertical-align: text-top;
+}
+#email {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  margin-top: 30px;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: black;
+  text-align: center;
+}
+li {
+  display: inline;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+li a:hover {
+  background-color: #333;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: white;
+}
+.email-hov:hover {
+  background-color: black;
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -20vh;
+  visibility: hidden;
+}
+.email-pad {
+  padding-bottom: 10px;
+  padding-left: 60px;
+}
+#container-adds-1 {
+  text-align: center;
+  height: 100vh;
+}
+#container-adds-2 {
+  text-align: left;
+  height: 100vh;
+}
+#container-adds-3 {
+  text-align: center;
+  height: 70vh;
+}
+@media screen and (max-width: 768px) {
+  #container-adds-1 {
+    height: 100vh;
+  }
+  #container-adds-2 {
+    height: 80vh;
+    font-size: 12px;
+  }
+  #container-adds-3 {
+    height: 70vh;
+    font-size: 12px;
+  }
+  #container-adds-2 h1 {
+    font-size: 40px;
+  }
+  #container-adds-3 h1 {
+    font-size: 40px;
+  }
+  .email-pad {
+    padding-bottom: 0px;
+    padding-left: 8px;
+  }
+  a.anchor {
+      top: -15vh;
+  }
+}
+/* yoinked https://stackoverflow.com/questions/51505446/css-scrolling-text-loop */
+#outer {
+  overflow: hidden;
+}
+#outer div {
+  display: inline-block;
+}
+#loop {
+  white-space: nowrap;
+  animation: loop-anim 12s linear infinite;
+}
+@keyframes loop-anim {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -50%;
+  }
+}
