@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Business™</title>
+    <style>
+      @font-face {
+        font-family: business;
+        src: url(business.ttf);
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Times New Roman", Times, serif;;
+        background-color: #e3dac9;
+      }
+      .thefont {
+        font-family: business;
+      }
+      #title {
+        font-size: 60px;
+      }
+      #man {
+        height: 220px;
+        display: inline-block;
+        margin-left: 40px;
+        vertical-align: middle;
+      }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      .header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 30px;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      .tkr-grn {
+        color: lawngreen;
+      }
+      .tkr-red {
+        color: red;
+      }
+      #tm {
+        font-size: 30px;
+        vertical-align: text-top;
+      }
+      #email {
+        text-decoration: none;
+        color: black;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        margin-top: 30px;
+        overflow: hidden;
+        list-style-type: none;
+        background-color: black;
+        text-align: center;
+      }
+      li {
+        display: inline;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 5px 20px;
+        text-decoration: none;
+        display: inline-block;
+      }
+      li a:hover {
+        background-color: #333;
+        color: white;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        color: white;
+      }
+      .email-hov:hover {
+        background-color: black;
+      }
+      a.anchor {
+        display: block;
+        position: relative;
+        top: -20vh;
+        visibility: hidden;
+      }
+      .email-pad {
+        padding-bottom: 10px;
+        padding-left: 60px;
+      }
+      #container-adds-1 {
+        text-align: center;
+        height: 100vh;
+      }
+      #container-adds-2 {
+        text-align: left;
+        height: 100vh;
+      }
+      #container-adds-3 {
+        text-align: center;
+        height: 70vh;
+      }
+      @media screen and (max-width: 768px) {
+        #container-adds-1 {
+          height: 100vh;
+        }
+        #container-adds-2 {
+          height: 80vh;
+          font-size: 12px;
+        }
+        #container-adds-3 {
+          height: 70vh;
+          font-size: 12px;
+        }
+        #container-adds-2 h1 {
+          font-size: 40px;
+        }
+        #container-adds-3 h1 {
+          font-size: 40px;
+        }
+        .email-pad {
+          padding-bottom: 0px;
+          padding-left: 8px;
+        }
+        a.anchor {
+            top: -15vh;
+        }
+      }
+      /* yoinked https://stackoverflow.com/questions/51505446/css-scrolling-text-loop */
+      #outer {
+        overflow: hidden;
+      }
+      #outer div {
+        display: inline-block;
+      }
+      #loop {
+        white-space: nowrap;
+        animation: loop-anim 12s linear infinite;
+      }
+      @keyframes loop-anim {
+        0% {
+          margin-left: 0;
+        }
+        100% {
+          margin-left: -50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+      <div id="outer">
+        <div>
+          <div id="loop">
+            <div id="content" style="margin-top: 4px;">
+              <span class="tkr-grn">$TSLA&nbsp;&nbsp;</span>
+              <span class="tkr-grn">$APPL&nbsp;&nbsp;</span>
+              <span class="tkr-red">$EBAY&nbsp;&nbsp;</span>
+              <span class="tkr-grn">$GOOGL&nbsp;&nbsp;</span>
+              <span class="tkr-grn">$TWTR&nbsp;&nbsp;</span>
+              <span class="tkr-red">$AMC&nbsp;&nbsp;</span>
+              <span class="tkr-red">$BB&nbsp;&nbsp;</span>
+              <span class="tkr-grn">$NET&nbsp;&nbsp;</span>
+              <span class="tkr-red">$WISH&nbsp;&nbsp;</span>
+              <span class="tkr-red">$FB&nbsp;&nbsp;</span>
+              <span class="tkr-grn">$AMD&nbsp;&nbsp;</span>
+              <span class="tkr-red">$MSFT&nbsp;&nbsp;</span>
+              <span class="tkr-grn">$NVDA&nbsp;&nbsp;</span>
+              <span class="tkr-grn">$SNAP&nbsp;&nbsp;</span>
+              <span class="tkr-grn">$NFLX&nbsp;&nbsp;</span>
+              <span class="tkr-red">$NOK&nbsp;&nbsp;</span>
+              <span class="tkr-grn">$MMM&nbsp;&nbsp;</span>
+              <span class="tkr-red">$RBLX&nbsp;&nbsp;</span>
+              <span class="tkr-grn">$KO&nbsp;&nbsp;</span>
+              <span class="tkr-red">$DLTR&nbsp;&nbsp;</span>
+              <span class="tkr-red">$CMCSA&nbsp;&nbsp;</span>
+              <span class="tkr-red">$GME&nbsp;&nbsp;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="home"></div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#staff">Staff</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="container" id="container-adds-1">
+      <div class="row">
+        <div class="col vh-100 d-flex justify-content-center align-items-center">
+          <h1 id="title" class="thefont">Business<span id="tm">™</span><img src="man.png" id="man"></h1>
+        </div>
+      </div>
+    </div>
+
+    <a class="anchor" id="staff"></a>
+
+    <div class="container" id="container-adds-2">
+      <div class="row justify-content-center pb-4">
+        <div class="col-10 col-md-8 col-lg-6" >
+          <h1 class="thefont" style="text-align: center;">Staff</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>CEO, Business <br><span class="email-hov"><a href="mailto:ceo@thebusiness.business">ceo@thebusiness.business</a></span></p>
+          </div>
+        </div>
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>CFO, Business <br><span class="email-hov"><a href="mailto:cfo@thebusiness.business">cfo@thebusiness.business</a></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>COO, Business <br><span class="email-hov"><a href="mailto:coo@thebusiness.business">coo@thebusiness.business</a></span></p>
+          </div>
+        </div>
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>CTO, Business <br><span class="email-hov"><a href="mailto:cto@thebusiness.business">cto@thebusiness.business</a></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>CMO, Business <br><span class="email-hov"><a href="mailto:cmo@thebusiness.business">cmo@thebusiness.business</a></span></p>
+          </div>
+        </div>
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>CSO, Business <br><span class="email-hov"><a href="mailto:cso@thebusiness.business">cso@thebusiness.business</a></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>CAO, Business <br><span class="email-hov"><a href="mailto:cao@thebusiness.business">cao@thebusiness.business</a></span></p>
+          </div>
+        </div>
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>CPO, Business <br><span class="email-hov"><a href="mailto:cpo@thebusiness.business">cpo@thebusiness.business</a></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>CCO, Business <br><span class="email-hov"><a href="mailto:cco@thebusiness.business">cco@thebusiness.business</a></span></p>
+          </div>
+        </div>
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>CWO, Business <br><span class="email-hov"><a href="mailto:cwo@thebusiness.business">cwo@thebusiness.business</a></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>CDO, Business <br><span class="email-hov"><a href="mailto:cdo@thebusiness.business">cdo@thebusiness.business</a></span></p>
+          </div>
+        </div>
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p><br><span class="email-hov"><a href="mailto:cpo@thebusiness.business"></a></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>PPR, Business <br><span class="email-hov"><a href="mailto:ppr@thebusiness.business">ppr@thebusiness.business</a></span></p>
+          </div>
+        </div>
+        <div class="col-5 col-md-4 col-lg-3">
+          <div class="email-pad">
+            <p>PHR, Business <br><span class="email-hov"><a href="mailto:phr@thebusiness.business">phr@thebusiness.business</a></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about"></div>
+
+    <div class="container" id="container-adds-3">
+      <div class="row justify-content-center pb-4">
+        <div class="col-10 col-md-8 col-lg-6" >
+          <h1 class="thefont">About</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-8 col-lg-6">
+          <div style="text-align: left; word-break: break-word; hyphens: auto;">
+            <p>Our structure consists of activities involving the making of money by producing, buying and selling of product. Simply put, we are conduct enterprise activites for profit. Having a name does not separate the entity from the responsible, which means that our controlling heads are in charge of our operations and are responsible and liable for debts incurred by the enterprise. If there is any acquired debts, creditors can go after the controlling heads personal possessions. Our structure does not allow for corporate tax rates. The heads are personally taxed on all income from the operations.</p>
+            <p>Our structure is often used colloquially (but not by lawyers or by public officials) to refer to a company. A company, on the other hand, is a separate legal entity and provides for limited liability, as well as corporate tax rates. A company structure is more complicated and expensive to set up, but offers more protection and benefits for the possessor. We are sometimes referred to as a company, but not a company.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div id="outer">
+        <div>
+          <div id="loop">
+            <div id="content" style="margin-top: 4px;">Copyright TheBusiness.Business, all rights reserved. Copyright is a form of protection grounded in the U.S. Constitution and granted by law for original works of authorship fixed in a tangible medium of expression. Copyright covers both published and unpublished works. Copyrightable authorship is original expression contributed by an author that contains at least a minimum amount of creativity. An individual work that appears on a website can be registered if it constitutes copyrightable subject matter and contains a sufficient amount of original authorship.&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        let outer = document.querySelector("#outer");
+        let content = outer.querySelector('#content');
+
+        repeatContent(content, outer.offsetWidth);
+
+        let el = outer.querySelector('#loop');
+        el.innerHTML = el.innerHTML + el.innerHTML;
+
+        function repeatContent(el, till) {
+            let html = el.innerHTML;
+            let counter = 0; // prevents infinite loop
+
+            while (el.offsetWidth < till && counter < 100) {
+                el.innerHTML += html;
+                counter += 1;
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
